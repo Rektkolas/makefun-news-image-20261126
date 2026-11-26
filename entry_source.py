@@ -1,29 +1,37 @@
+#!/usr/bin/env python3
+"""Copy the bundled entry.png to the requested output location.
+
+The destination comes from the ENTRY_OUTPUT environment variable when it
+is set; otherwise the image lands at /output/entry.png. If writing there
+fails with an OSError, the program falls back to ./output/entry.png
+relative to the current working directory.
+"""
+
 import os
 import shutil
 from pathlib import Path
 
-HERE = Path(__file__).parent
-BUNDLED = HERE / "entry.png"
+
+def resolve_destination() -> Path:
+    chosen = os.environ.get("ENTRY_OUTPUT")
+    if chosen:
+        return Path(chosen)
+    return Path("/output/entry.png")
 
 
-def destination():
-    env = os.getenv("ENTRY_OUTPUT")
-    if env:
-        return Path(env)
-    return Path("/output") / "entry.png"
+def deliver(source_png: Path, destination: Path) -> None:
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source_png, destination)
 
 
-def run():
-    out = destination()
+def main() -> None:
+    source_png = Path(__file__).resolve().parent / "entry.png"
     try:
-        out.parent.mkdir(parents=True, exist_ok=True)
-        with open(BUNDLED, "rb") as src, open(out, "wb") as dst:
-            shutil.copyfileobj(src, dst)
+        deliver(source_png, resolve_destination())
     except OSError:
-        alt = Path("output") / "entry.png"
-        alt.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(BUNDLED, alt)
+        fallback = Path.cwd() / "output" / "entry.png"
+        deliver(source_png, fallback)
 
 
 if __name__ == "__main__":
-    run()
+    main()
