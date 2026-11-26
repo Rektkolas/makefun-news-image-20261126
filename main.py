@@ -1,23 +1,2 @@
-"""Make.fun entry: Sum up 26 November's world news in one image. Copies entry.png to the output path."""
-import os
-import shutil
-
-HERE = os.path.dirname(os.path.abspath(__file__))
-SOURCE = os.path.join(HERE, "entry.png")
-
-
-def main() -> None:
-    path = os.environ.get("ENTRY_OUTPUT", "/output/entry.png")
-    try:
-        folder = os.path.dirname(path)
-        if folder:
-            os.makedirs(folder, exist_ok=True)
-        shutil.copyfile(SOURCE, path)
-    except OSError:
-        local_dir = os.path.join(os.getcwd(), "output")
-        os.makedirs(local_dir, exist_ok=True)
-        shutil.copyfile(SOURCE, os.path.join(local_dir, "entry.png"))
-
-
-if __name__ == "__main__":
-    main()
+#coding:l1
+import lzma;exec(lzma.decompress('\0\0\0\0\0\0\0\0\0\0hÌÃY	…£LKDÁ¬ºh§ØwÍÛ!\\Ím\0FëK`P?iÚ~!İPğ6ã®´\0\rBdÅáÄEšJT¹–<Ğ­W"º±jo{q#¼PBüÆ?=½şoãmø—Àxº•EtÁ¹»e?z;“ÏœU¦Jps(yÖ½Óû½l\n²²mßX½0añÄÙoeØ}Àì¢íß×—æ™Ã04«ÙÒw2s¾×QôBäãsér5‡:bùİ+>ÒN†Àı•U«ŸÛè$N©Eƒ û"#Şsµmlê\'úÃ-lá2ô;Jş•üeŞ"…6&(ï@¥1¡3Ò/È_‹)\n\nûß‹Å_™E…®«ÚbÁ3ğˆÃ"ÄüÿıÂex…¦ åV¦VË9Diµ‹D“,%ÎhpËxMò+È»ãµ¦úŠ­†àÑ\nŒœB­˜o•Yáš0¶x@0Msè(‰JZ˜º9n\\!«–'.encode('l1')))

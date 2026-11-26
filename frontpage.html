@@ -4,291 +4,246 @@
 <meta charset="utf-8">
 <title>The World in One Day — Thursday 26 November 2026</title>
 <style>
-  @page { size: 2048px 2048px; margin: 0; }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 2048px; height: 2048px; overflow: hidden; }
-  body {
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
-    background: #f7f3ea; color: #141310;
-    padding: 16px 48px 12px 48px;
-  }
-  /* ---------- masthead ---------- */
-  h1.masthead {
-    font-family: "Noto Serif Display", "Noto Serif", Georgia, "DejaVu Serif", serif;
-    font-weight: 900; font-size: 80px; text-align: center; white-space: nowrap;
-    line-height: 1.0; padding: 0;
-  }
-  .dateline {
-    border-top: 6px solid #141310; border-bottom: 2px solid #141310;
-    padding: 4px 2px; font-size: 21px; margin-top: 3px;
-  }
-  .dateline .l { float: left; font-weight: 700; }
-  .dateline .r { float: right; }
-  .dateline .c { text-align: center; color: #a41218; font-weight: 700; }
-  .dateline::after { content: ""; display: block; clear: both; }
-  /* ---------- lead ---------- */
-  .lead { padding: 6px 0 0 0; }
-  .lead-text { float: left; width: 1330px; }
-  .kicker { color: #a41218; font-weight: 800; letter-spacing: 3px; font-size: 20px; text-transform: uppercase; }
-  .lead h2 {
-    font-family: "Noto Serif", Georgia, serif; font-weight: 900;
-    font-size: 43px; line-height: 1.05; margin: 4px 0 5px 0;
-  }
-  .lead p { font-size: 23px; line-height: 1.22; }
-  .lead-map { float: right; width: 545px; }
-  .lead-map .cap { font-size: 17px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 1px; }
-  .lead-map .legend { font-size: 15px; text-align: center; margin-top: 1px; color: #3a372e; }
-  .lead::after { content: ""; display: block; clear: both; }
-  /* ---------- lead spot art ---------- */
-  .spotart { margin-top: 6px; border: 2px solid #141310; }
-  .spotart .cap {
-    font-size: 15px; letter-spacing: 2px; text-transform: uppercase;
-    border-top: 1px solid #141310; padding: 2px 10px; background: #efe8d8;
-  }
-  .spotart .cap b { color: #a41218; }
-  /* ---------- numbers strip ---------- */
-  .numbers { border-top: 3px solid #141310; border-bottom: 3px solid #141310; margin-top: 6px; padding: 4px 0; }
-  .num { float: left; width: 16.66%; text-align: center; padding: 0 8px; border-right: 1px solid #b9b2a2; }
-  .num.last { border-right: none; }
-  .num b { display: block; font-family: "Noto Serif", Georgia, serif; font-size: 32px; color: #a41218; line-height: 1; }
-  .num span { font-size: 16.5px; line-height: 1.12; display: block; margin-top: 2px; }
-  .numbers::after { content: ""; display: block; clear: both; }
-  /* ---------- UTC timeline ---------- */
-  .timeline { border-bottom: 3px solid #141310; padding: 4px 0 5px 0; }
-  .timeline h3 {
-    font-size: 19px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 3px;
-  }
-  .timeline h3 span { color: #a41218; }
-  .timeline h3 .src { float: right; font-size: 14.5px; letter-spacing: 0; text-transform: none; font-weight: 400; color: #3a372e; }
-  .tl-row { margin-bottom: 2px; }
-  .tl { float: left; width: 19.6%; margin-right: 0.5%; font-size: 15.5px; line-height: 1.13; }
-  .tl.last { margin-right: 0; }
-  .tl b { font-family: "Noto Serif", Georgia, serif; color: #a41218; font-size: 17px; }
-  .tl-row::after { content: ""; display: block; clear: both; }
-  .timeline::after { content: ""; display: block; clear: both; }
-  /* ---------- body columns ---------- */
-  .cols { margin-top: 6px; }
-  .col { float: left; width: 23.92%; margin-right: 1.44%; }
-  .col.last { margin-right: 0; }
-  .cols::after { content: ""; display: block; clear: both; }
-  .sec { margin-bottom: 7px; }
-  .sec h3, .band h3 {
-    font-size: 21px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase;
-    border-bottom: 4px solid #a41218; padding-bottom: 2px; margin-bottom: 4px;
-  }
-  .sec h3 svg, .band h3 svg { vertical-align: -3px; margin-right: 7px; }
-  .brief { font-size: 17px; line-height: 1.19; margin-bottom: 4px; }
-  .brief b { font-weight: 800; }
-  /* ---------- bottom band ---------- */
-  .band { border-top: 3px solid #141310; margin-top: 2px; padding-top: 4px; }
-  .band .brief { font-size: 16.5px; line-height: 1.16; margin-bottom: 4px; }
-  .bcol { float: left; width: 23.92%; margin-right: 1.44%; }
-  .bcol.last { margin-right: 0; }
-  .band::after { content: ""; display: block; clear: both; }
-  /* ---------- footer ---------- */
-  .footer { border-top: 5px solid #141310; margin-top: 2px; padding-top: 4px; font-size: 18px; }
-  .footer .l { float: left; font-weight: 800; }
-  .footer .r { float: right; }
-  .footer .c { text-align: center; }
-  .footer::after { content: ""; display: block; clear: both; }
+@page { size: 2048px 2048px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 2048px; background: #f7f2e7; color: #1a1712;
+  font-family: "DejaVu Sans", "Liberation Sans", sans-serif; padding: 18px 34px 0 34px; }
+.tbl { display: table; width: 100%; border-collapse: separate; }
+.masthead { text-align: center; font-family: "DejaVu Serif", "Liberation Serif", Georgia, serif;
+  font-weight: bold; font-size: 78px; letter-spacing: 1px; line-height: 1.02; }
+.rule-heavy { border-top: 7px solid #1a1712; margin-top: 7px; }
+.rule-thin { border-top: 2px solid #1a1712; margin-top: 3px; }
+.dateline { font-size: 22px; padding: 6px 0 5px 0; border-bottom: 2px solid #1a1712; }
+.dateline .l { display: table-cell; font-weight: bold; white-space: nowrap; }
+.dateline .c { display: table-cell; width: 56%; text-align: center; color: #b3231b; font-weight: bold; }
+.dateline .r { display: table-cell; text-align: right; white-space: nowrap; }
+.lead-wrap { margin-top: 6px; border-collapse: separate; border-spacing: 0; }
+.lead { display: table-cell; width: 63.5%; vertical-align: top; padding-right: 26px; }
+.kicker { color: #b3231b; font-weight: bold; font-size: 21px; letter-spacing: 2px; }
+.lead h1 { font-family: "DejaVu Serif", "Liberation Serif", Georgia, serif; font-size: 44px; line-height: 1.07; margin: 4px 0 7px 0; }
+.lead p { font-size: 23px; line-height: 1.22; }
+.mapcell { display: table-cell; width: 36.5%; vertical-align: top; }
+.mapbox { background: #efe6d0; border: 2px solid #1a1712; padding: 7px 12px 5px 12px; }
+.mapbox .mt { text-align: center; font-weight: bold; font-size: 19px; letter-spacing: 2px; color: #b3231b; }
+.mapbox .legend { font-size: 17.5px; line-height: 1.26; margin-top: 3px; }
+.spotart { margin-top: 7px; border-top: 3px solid #1a1712; border-bottom: 2px solid #1a1712; padding: 4px 0 2px 0; }
+.spotcap { font-size: 17px; letter-spacing: 1.5px; color: #444; }
+.numbers { border-bottom: 3px solid #1a1712; padding: 6px 0 4px 0; border-spacing: 0; }
+.num { display: table-cell; width: 16.66%; text-align: center; border-left: 1px solid #c9bfa5; padding: 0 6px; }
+.num.first { border-left: none; }
+.num .big { font-family: "DejaVu Serif", Georgia, serif; font-weight: bold; font-size: 33px; color: #b3231b; }
+.num .small { font-size: 17px; line-height: 1.18; }
+.timeline { border-bottom: 3px solid #1a1712; padding: 6px 0 4px 0; }
+.timeline .th { font-weight: bold; font-size: 19px; letter-spacing: 1.5px; color: #b3231b; margin-bottom: 3px; }
+.timeline .te { display: table-cell; width: 20%; font-size: 17px; line-height: 1.2; padding-right: 14px; vertical-align: top; }
+.timeline .te b { color: #b3231b; }
+.timeline .src { font-size: 15.5px; color: #555; padding-top: 2px; }
+.grid { margin-top: 6px; border-spacing: 0; }
+.col { display: table-cell; width: 24.1%; vertical-align: top; padding-right: 22px; }
+.col.last { padding-right: 0; }
+h2.sec { font-size: 21.5px; letter-spacing: 1px; border-bottom: 3.5px solid #b3231b; padding-bottom: 3px; margin-bottom: 5px; }
+h2.sec svg { vertical-align: -4px; margin-right: 7px; }
+.brief { font-size: 16.2px; line-height: 1.11; margin-bottom: 4px; }
+.brief b { font-weight: bold; }
+.band { border-top: 3.5px solid #1a1712; margin-top: 2px; padding-top: 5px; }
+.bandcols { border-spacing: 0; }
+.bcol { display: table-cell; width: 24.1%; vertical-align: top; padding-right: 22px; }
+.bcol.last { padding-right: 0; }
+.footer { border-top: 3.5px solid #1a1712; margin-top: 4px; padding-top: 5px; font-size: 18px; border-spacing: 0; }
+.footer .l { display: table-cell; font-weight: bold; white-space: nowrap; }
+.footer .c { display: table-cell; width: 58%; text-align: center; }
+.footer .r { display: table-cell; text-align: right; white-space: nowrap; }
 </style>
 </head>
 <body>
 
-  <h1 class="masthead">THE WORLD IN ONE DAY</h1>
-  <div class="dateline">
-    <span class="l">Thursday 26 November 2026</span><span class="r">Compiled 12:45 WIB &middot; 05:45 UTC</span>
-    <div class="c">Date check: 26 November 2026 is a Thursday &#10003;</div>
-  </div>
+<div class="masthead">THE WORLD IN ONE DAY</div>
+<div class="rule-heavy"></div><div class="rule-thin"></div>
+<div class="dateline tbl">
+  <div class="l">Thursday 26 November 2026</div>
+  <div class="c">Date check: 26 November 2026 is a Thursday &#10003;</div>
+  <div class="r">Compiled 13:00 WIB &middot; 06:00 UTC</div>
+</div>
 
+<div class="lead-wrap tbl">
   <div class="lead">
-    <div class="lead-text">
-      <div class="kicker">Lead &mdash; The War in Ukraine</div>
-      <h2>Ukraine strikes deep into Russia, damaging five jets at Savasleyka airbase</h2>
-      <p>Ukrainian forces struck the Savasleyka airbase in Russia&rsquo;s Nizhny Novgorod region, damaging three MiG-31 jets and two Su-34 fighter-bombers, Kyiv said. Ukrainian drones also set two Rosneft oil refineries &mdash; Syzran and Kuibyshev &mdash; ablaze in the Samara region.</p>
-    </div>
-    <div class="lead-map">
-      <svg width="545" height="200" viewBox="0 12 560 243">
-        <rect x="0" y="0" width="560" height="270" fill="#efe8d8" stroke="#141310" stroke-width="2"/>
-        <path d="M40 62 L120 40 L185 54 L175 96 L130 110 L120 148 L85 162 L60 118 L35 94 Z" fill="#cbbfa5"/>
-        <path d="M120 168 L165 160 L180 198 L160 244 L135 220 L125 192 Z" fill="#cbbfa5"/>
-        <path d="M255 48 L300 38 L320 62 L295 86 L265 82 L250 64 Z" fill="#cbbfa5"/>
-        <path d="M262 96 L310 92 L330 130 L315 186 L285 208 L262 162 L255 124 Z" fill="#cbbfa5"/>
-        <path d="M325 44 L470 34 L520 72 L500 120 L430 138 L400 110 L350 96 L322 70 Z" fill="#cbbfa5"/>
-        <path d="M440 180 L505 172 L525 200 L480 222 L445 208 Z" fill="#cbbfa5"/>
-        <g font-family="Noto Sans, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">
-          <circle cx="300" cy="56" r="13" fill="#a41218"/><text x="300" y="62">1</text>
-          <circle cx="330" cy="90" r="13" fill="#a41218"/><text x="330" y="96">2</text>
-          <circle cx="352" cy="118" r="13" fill="#a41218"/><text x="352" y="124">3</text>
-          <circle cx="290" cy="138" r="13" fill="#a41218"/><text x="290" y="144">4</text>
-          <circle cx="420" cy="96" r="13" fill="#a41218"/><text x="420" y="102">5</text>
-          <circle cx="490" cy="82" r="13" fill="#a41218"/><text x="490" y="88">6</text>
-          <circle cx="105" cy="86" r="13" fill="#a41218"/><text x="105" y="92">7</text>
-          <circle cx="150" cy="198" r="13" fill="#a41218"/><text x="150" y="204">8</text>
-          <circle cx="300" cy="172" r="13" fill="#a41218"/><text x="300" y="178">9</text>
-        </g>
-      </svg>
-      <div class="cap">The day&rsquo;s flashpoints</div>
-      <div class="legend">1 Savasleyka &middot; 2 Riyadh &middot; 3 Gaza &middot; 4 Khartoum &middot; 5 Tiangong &middot; 6 Tokyo &middot; 7 New York &middot; 8 Cartagena &middot; 9 Enugu</div>
-    </div>
+    <div class="kicker">LEAD &mdash; THE WAR IN UKRAINE</div>
+    <h1>Ukraine strikes deep into Russia, damaging five jets at Savasleyka airbase</h1>
+    <p>Ukrainian forces struck the Savasleyka airbase in Russia&rsquo;s Nizhny Novgorod region, damaging three MiG-31 jets and two Su-34 fighter-bombers, Kyiv said. Ukrainian drones also set two Rosneft oil refineries &mdash; Syzran and Kuibyshev &mdash; ablaze in the Samara region.</p>
   </div>
-
-  <div class="spotart">
-    <svg width="1944" height="62" viewBox="0 0 1944 86" preserveAspectRatio="none">
-      <rect x="0" y="0" width="1944" height="86" fill="#efe8d8"/>
-      <g stroke="#8a8271" stroke-width="1">
-        <line x1="0" y1="14" x2="1944" y2="14"/><line x1="0" y1="26" x2="1944" y2="26"/>
+  <div class="mapcell">
+  <div class="mapbox">
+    <div class="mt">THE DAY&rsquo;S FLASHPOINTS</div>
+    <svg width="100%" height="196" viewBox="0 0 700 300">
+      <rect x="0" y="0" width="700" height="300" fill="#efe6d0"/>
+      <g fill="#d8cbae" stroke="#a08c5f" stroke-width="2">
+        <path d="M60,78 L168,52 L214,92 L182,142 L118,152 L68,122 Z"/>
+        <path d="M148,168 L186,162 L198,222 L176,268 L152,228 Z"/>
+        <path d="M328,58 L392,46 L408,86 L366,108 L334,92 Z"/>
+        <path d="M334,122 L396,116 L412,182 L380,238 L344,202 Z"/>
+        <path d="M412,52 L562,44 L614,96 L562,142 L468,122 L420,96 Z"/>
+        <path d="M518,182 L602,176 L624,216 L560,238 L524,216 Z"/>
       </g>
-      <rect x="1560" y="18" width="90" height="44" fill="#141310"/>
-      <rect x="1592" y="4" width="26" height="16" fill="#141310"/>
-      <line x1="1605" y1="4" x2="1605" y2="0" stroke="#141310" stroke-width="3"/>
-      <polygon points="0,86 1944,86 1330,64 620,64" fill="#cbbfa5"/>
-      <line x1="640" y1="75" x2="1310" y2="75" stroke="#f7f3ea" stroke-width="3" stroke-dasharray="26 18"/>
-      <g fill="#141310">
-        <polygon points="180,58 268,50 300,42 330,50 392,53 330,59 268,60 250,68 236,60 196,62"/>
-        <polygon points="700,54 788,46 820,38 850,46 912,49 850,55 788,56 770,64 756,56 716,58"/>
-        <polygon points="1150,50 1230,43 1258,36 1285,43 1340,46 1285,51 1230,52 1214,59 1201,52 1165,53"/>
-      </g>
-      <g>
-        <polygon points="1420,64 1452,30 1470,52 1492,22 1508,58 1530,40 1546,66" fill="#a41218"/>
-        <polygon points="1444,64 1466,44 1484,58 1500,40 1518,64" fill="#d96b1e"/>
-        <ellipse cx="1480" cy="14" rx="90" ry="10" fill="#8a8271" opacity="0.55"/>
-        <ellipse cx="1560" cy="8" rx="130" ry="8" fill="#8a8271" opacity="0.4"/>
-      </g>
-      <g stroke="#141310" stroke-width="2">
-        <line x1="60" y1="86" x2="60" y2="66"/><line x1="1884" y1="86" x2="1884" y2="66"/>
+      <g font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" text-anchor="middle">
+        <circle cx="398" cy="70" r="14" fill="#b3231b"/><text x="398" y="77" fill="#fff">1</text>
+        <circle cx="452" cy="128" r="14" fill="#b3231b"/><text x="452" y="135" fill="#fff">2</text>
+        <circle cx="428" cy="110" r="14" fill="#b3231b"/><text x="428" y="117" fill="#fff">3</text>
+        <circle cx="388" cy="152" r="14" fill="#b3231b"/><text x="388" y="159" fill="#fff">4</text>
+        <circle cx="545" cy="95" r="14" fill="#b3231b"/><text x="545" y="102" fill="#fff">5</text>
+        <circle cx="592" cy="88" r="14" fill="#b3231b"/><text x="592" y="95" fill="#fff">6</text>
+        <circle cx="140" cy="86" r="14" fill="#b3231b"/><text x="140" y="93" fill="#fff">7</text>
+        <circle cx="150" cy="152" r="14" fill="#b3231b"/><text x="150" y="159" fill="#fff">8</text>
+        <circle cx="352" cy="168" r="14" fill="#b3231b"/><text x="352" y="175" fill="#fff">9</text>
       </g>
     </svg>
-    <div class="cap"><b>Spot art:</b> Savasleyka airbase at dawn &mdash; drawn in code, no photographs</div>
+    <div class="legend">1 Savasleyka &middot; 2 Riyadh &middot; 3 Gaza &middot; 4 Khartoum &middot; 5 Tiangong &middot; 6 Tokyo &middot; 7 New York &middot; 8 Cartagena &middot; 9 Enugu</div>
   </div>
-
-  <div class="numbers">
-    <div class="num"><b>5</b><span>Russian jets damaged at Savasleyka</span></div>
-    <div class="num"><b>30</b><span>dead in Egypt fuel-tanker fire</span></div>
-    <div class="num"><b>25%</b><span>US tariff proposed on Indian goods</span></div>
-    <div class="num"><b>&minus;6.2%</b><span>Kospi, in Asia&rsquo;s tech rout</span></div>
-    <div class="num"><b>~1,000</b><span>Gaza shelter sites at flood risk</span></div>
-    <div class="num last"><b>$227m</b><span>of meth seized in Nigeria</span></div>
   </div>
+</div>
 
-  <div class="timeline">
-    <h3><span>The Day in UTC</span> &mdash; first reported<span class="src">First-reported stamps: Daily Summary Of, 26 Nov, citing the wires</span></h3>
-    <div class="tl-row">
-      <div class="tl"><b>00:00</b> Sanaa blast as coalition intercepts missiles over Riyadh</div>
-      <div class="tl"><b>00:08</b> Met Office: Britain&rsquo;s seasons are shifting (BBC)</div>
-      <div class="tl"><b>00:22</b> Zambia bans term-limit protest</div>
-      <div class="tl"><b>00:41</b> ISIL suicide attack in Hasakah, Syria</div>
-      <div class="tl last"><b>01:00</b> Puerto Rico court cancels Luma power contract</div>
-    </div>
-    <div class="tl-row">
-      <div class="tl"><b>01:22</b> California king-tide flood warning (BBC)</div>
-      <div class="tl"><b>01:39</b> Ukraine damages five jets at Savasleyka</div>
-      <div class="tl"><b>01:42</b> ElevenLabs in $33bn funding talks (Bloomberg)</div>
-      <div class="tl"><b>03:13</b> Denny&rsquo;s reinstates Nvidia birthplace plaque (CNBC)</div>
-      <div class="tl last"><b>03:19</b> S&amp;P warns Nvidia rating at risk (CNBC)</div>
-    </div>
+<div class="spotart">
+  <svg width="100%" height="56" viewBox="0 0 1980 110">
+    <rect x="0" y="0" width="1980" height="110" fill="#f7f2e7"/>
+    <polygon points="0,96 1980,96 1980,110 0,110" fill="#c9bfa5"/>
+    <polygon points="120,92 1500,78 1560,92 300,104" fill="#8d8272"/>
+    <g stroke="#1a1712" stroke-width="2" fill="none" stroke-dasharray="26 18">
+      <line x1="200" y1="90" x2="1480" y2="79"/>
+    </g>
+    <g fill="#1a1712">
+      <path d="M420,58 L470,44 L520,54 L600,46 L612,54 L600,62 L520,62 L472,72 L420,66 Z"/>
+      <path d="M760,66 L806,54 L852,62 L924,56 L934,62 L924,69 L852,69 L808,77 L760,72 Z"/>
+      <path d="M1080,50 L1130,36 L1182,47 L1266,39 L1278,47 L1266,55 L1182,55 L1132,65 L1080,58 Z"/>
+    </g>
+    <g fill="#5a5348">
+      <rect x="1560" y="18" width="34" height="66"/>
+      <rect x="1552" y="8" width="50" height="14"/>
+      <line x1="1577" y1="22" x2="1577" y2="84" stroke="#5a5348" stroke-width="3"/>
+    </g>
+    <g>
+      <path d="M1660,84 C1638,60 1668,48 1658,26 C1684,44 1696,58 1688,84 Z" fill="#b3231b"/>
+      <path d="M1692,86 C1678,66 1700,56 1694,38 C1714,52 1722,64 1716,86 Z" fill="#e07b24"/>
+      <path d="M1724,86 C1714,70 1730,62 1726,48 C1742,60 1748,70 1743,86 Z" fill="#b3231b"/>
+      <ellipse cx="1680" cy="16" rx="66" ry="11" fill="#9a917f" opacity="0.65"/>
+      <ellipse cx="1740" cy="8" rx="48" ry="8" fill="#9a917f" opacity="0.5"/>
+    </g>
+  </svg>
+  <div class="spotcap">SPOT ART: SAVASLEYKA AIRBASE AT DAWN &mdash; DRAWN IN CODE, NO PHOTOGRAPHS</div>
+</div>
+
+<div class="numbers tbl">
+  <div class="num first"><div class="big">5</div><div class="small">Russian jets damaged at Savasleyka</div></div>
+  <div class="num"><div class="big">30</div><div class="small">dead in Egypt fuel-tanker fire</div></div>
+  <div class="num"><div class="big">25%</div><div class="small">US tariff proposed on Indian goods</div></div>
+  <div class="num"><div class="big">&minus;6.2%</div><div class="small">Kospi, in Asia&rsquo;s tech rout</div></div>
+  <div class="num"><div class="big">~1,000</div><div class="small">Gaza shelter sites at flood risk</div></div>
+  <div class="num"><div class="big">$227m</div><div class="small">of meth seized in Nigeria</div></div>
+</div>
+
+<div class="timeline">
+  <div class="th">THE DAY IN UTC &mdash; FIRST REPORTED</div>
+  <div class="tbl">
+  <div class="te"><b>00:00</b> Sanaa blast as coalition intercepts missiles over Riyadh</div>
+  <div class="te"><b>00:22</b> Zambia bans protest over term-limit push</div>
+  <div class="te"><b>00:41</b> ISIL suicide attack kills two in Hasakah</div>
+  <div class="te"><b>01:00</b> Puerto Rico court cancels Luma power contract</div>
+  <div class="te"><b>01:39</b> Ukraine says five aircraft damaged at Savasleyka</div>
   </div>
+  <div class="src">First-reported stamps: Daily Summary Of, 26 Nov, citing the wires</div>
+</div>
 
-  <div class="cols">
-    <div class="col">
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#141310" stroke-width="2"/><polygon points="12,6 13.8,10.2 18.2,10.4 14.8,13.2 15.9,17.5 12,15 8.1,17.5 9.2,13.2 5.8,10.4 10.2,10.2" fill="#a41218"/></svg>Europe</h3>
-        <p class="brief"><b>Energy grid hit again.</b> Russian strikes damaged Ukrainian power and gas infrastructure, cutting electricity across five regions, Kyiv said.</p>
-        <p class="brief"><b>Drone toll.</b> Ukraine says its air defences downed 88 of 112 Russian drones launched overnight.</p>
-        <p class="brief"><b>Poland&rsquo;s call.</b> Warsaw urged NATO to intercept Russian missiles over Ukraine before they cross into Polish airspace.</p>
-        <p class="brief"><b>Rutte&rsquo;s warning.</b> NATO&rsquo;s secretary general urged Europe to prepare for the possibility of extensive armed conflict.</p>
-        <p class="brief"><b>Estonia seals border.</b> Tallinn sealed part of its border with Russia, citing the risks on its eastern frontier.</p>
-        <p class="brief"><b>Nuclear-test inquiry.</b> Britain will open an independent inquiry into the effects of nuclear testing on veterans and their families.</p>
-        <p class="brief"><b>Puigdemont to return.</b> Carles Puigdemont will return to Spain on 12 December, ending nearly a decade of exile after courts shelved his case (Reuters).</p>
-        <p class="brief"><b>Paris backlash.</b> France&rsquo;s government faces significant backlash over plans to deploy troops for Ukraine, reports say.</p>
-        <p class="brief"><b>UK&ndash;EU treaties.</b> London and Brussels are set to publish two post-Brexit treaties covering food trade and emissions trading, with legislation to enact most of the deal.</p>
-        <p class="brief"><b>Poundland collapse.</b> Poundland entered administration, putting 12,000 jobs at risk, after its US owner Gordon Brothers rejected at least two final bids (BBC).</p>
-        <p class="brief"><b>EU tech fund.</b> EU officials plan a &euro;50 billion technology fund to rival the US and China in the quantum race, reports say.</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><path d="M19 14.5A8.5 8.5 0 1 1 9.5 5 6.8 6.8 0 0 0 19 14.5Z" fill="#a41218"/></svg>Middle East</h3>
-        <p class="brief"><b>Netanyahu case.</b> Judges in the prime minister&rsquo;s corruption trial recommended prosecutors drop the key Case 4000 bribery charge.</p>
-        <p class="brief"><b>October 7 inquiry.</b> A Knesset committee approved a state commission to investigate the 7 October attacks, despite Netanyahu&rsquo;s resistance.</p>
-        <p class="brief"><b>Riyadh tower hit again.</b> A Houthi missile struck Riyadh&rsquo;s PIF Tower for a second time in a week, wounding 11, Saudi civil defence said.</p>
-        <p class="brief"><b>Yemen exchange.</b> The Saudi-led coalition struck Hodeidah port and targets near Sanaa, and said it intercepted missiles over Riyadh and two drones.</p>
-        <p class="brief"><b>Oil climbs.</b> Crude rose after the Houthis claimed an attack on Saudi Arabia&rsquo;s largest refinery; Riyadh said it downed four drones over Ras Tanura.</p>
-        <p class="brief"><b>Gaza strike.</b> An Israeli strike in Gaza City&rsquo;s Shati camp killed Hamas security official Mohammad Majed Abu al-Ouf, his wife and two daughters, 15 and 13.</p>
-        <p class="brief"><b>Flood warning.</b> Gaza municipalities warn winter rains could flood about 1,000 camps and shelter sites for displaced people.</p>
-        <p class="brief"><b>Hasakah attack.</b> An ISIL suicide bombing at a checkpoint in Hasakah, north-east Syria, killed two security personnel and wounded five.</p>
-        <p class="brief"><b>Iran war funds.</b> President Trump said Washington has funding to sustain its war against Iran until the end of January.</p>
-        <p class="brief"><b>Hormuz mines.</b> Iran reported two &lsquo;rogue&rsquo; oil tankers hit naval mines and caught fire in the Strait of Hormuz.</p>
-        <p class="brief"><b>Executions reported.</b> Iranian authorities plan to execute two anti-regime protesters at dawn after three days on death row, reports say.</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="13" r="5" fill="#a41218"/><g stroke="#141310" stroke-width="2"><line x1="12" y1="2" x2="12" y2="5"/><line x1="3" y1="13" x2="6" y2="13"/><line x1="18" y1="13" x2="21" y2="13"/><line x1="5" y1="6" x2="7" y2="8"/><line x1="19" y1="6" x2="17" y2="8"/></g></svg>Asia-Pacific</h3>
-        <p class="brief"><b>First aboard Tiangong.</b> Pakistan&rsquo;s Muhammad Zeeshan Ali became the first foreign astronaut to board China&rsquo;s Tiangong station, and the first Pakistani in orbit.</p>
-        <p class="brief"><b>Pyongyang shuts Swiss office.</b> North Korea threatened to close Switzerland&rsquo;s newly reopened office in Pyongyang, in a sanctions row over a youth camp.</p>
-        <p class="brief"><b>Malaysia sues Google.</b> Kuala Lumpur is suing Google for $146 million over gambling, scam and dangerous content on YouTube.</p>
-        <p class="brief"><b>Pacific pact.</b> Australia and Solomon Islands signed a security treaty affirming no foreign military base in the Pacific nation &mdash; a blow to China.</p>
-        <p class="brief"><b>Indonesia mine flood.</b> Rescuers in West Java resumed the search for 13 miners trapped in a flooded illegal gold mine near Bogor; 13 are already confirmed dead after heavy rain inundated the shaft on Monday (Reuters).</p>
-      </div>
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><polygon points="9,2 15,4 18,10 15,18 10,22 6,16 5,8" fill="#a41218"/></svg>Africa</h3>
-        <p class="brief"><b>Egypt inferno.</b> At least 30 died and 15 were wounded when a petroleum tanker overturned and burst into flames on Cairo&rsquo;s Ring Road.</p>
-        <p class="brief"><b>Nigeria meth bust.</b> Agents seized 1,512 kg of meth worth about $227m from an industrial-scale lab in Enugu, arresting five Mexican nationals (AP).</p>
-        <p class="brief"><b>Zambia protest ban.</b> Authorities banned a protest against moves to scrap presidential term limits, citing a risk of clashes.</p>
-        <p class="brief"><b>Senegal champions again.</b> The Court of Arbitration for Sport restored Senegal as Africa Cup of Nations champions, upholding the 1&ndash;0 final win over Morocco.</p>
-        <p class="brief"><b>Mugabe warrant.</b> A court issued an arrest warrant for a son of ex-president Robert Mugabe after he failed to appear, reports say.</p>
-        <p class="brief"><b>Sudan drone strikes.</b> Drone strikes blamed on the paramilitary RSF killed 19 civilians and wounded 20 in Blue Nile state, a Sudanese rights group said (Reuters).</p>
-      </div>
-    </div>
-
-    <div class="col last">
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#141310" stroke-width="2"/><ellipse cx="12" cy="12" rx="5" ry="10" fill="none" stroke="#a41218" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="#a41218" stroke-width="1.6"/></svg>Americas</h3>
-        <p class="brief"><b>Parade postponed.</b> The 100th Macy&rsquo;s Thanksgiving Parade was postponed to Saturday &mdash; a first &mdash; as a nor&rsquo;easter hit New York (Reuters).</p>
-        <p class="brief"><b>Cartagena hostages freed.</b> Colombian police stormed a supermarket and freed about 20 hostages held 17 hours after a failed cash-truck robbery.</p>
-        <p class="brief"><b>Mississippi crash.</b> Six people, including two children, died when a small aircraft crashed near the Mississippi coast.</p>
-        <p class="brief"><b>Power contract voided.</b> Puerto Rico&rsquo;s Supreme Court ruled 5&ndash;4 to cancel the Luma Energy power contract, giving officials a year to decide next steps.</p>
-        <p class="brief"><b>Deportation saga ends.</b> Kilmar &Aacute;brego Garc&iacute;a, whose deportation to El Salvador sparked a bitter immigration fight, is leaving the US for Spain.</p>
-        <p class="brief"><b>Iowa detonation.</b> The US Army detonated nearly 10,000 lb of deteriorating lead azide at its Iowa ammunition plant, after court clearance.</p>
-        <p class="brief"><b>Children returned.</b> Washington and Moscow announced nine Ukrainian children returned to their families, in a Melania Trump-backed process.</p>
-        <p class="brief"><b>California king tides.</b> Forecasters warned of major coastal flooding as king tides peaked over Thanksgiving, with water above 8 feet in places and flooding already reported in the San Francisco Bay Area (BBC).</p>
-      </div>
-      <div class="sec"><h3><svg width="22" height="22" viewBox="0 0 24 24"><polyline points="3,19 9,11 13,14 21,5" fill="none" stroke="#a41218" stroke-width="2.4"/><polyline points="15,5 21,5 21,11" fill="none" stroke="#141310" stroke-width="2.4"/></svg>Markets &amp; Tech</h3>
-        <p class="brief"><b>Asia tech rout.</b> The AI trade unwound: Nikkei 225 &minus;2.78% to 57,011.62, Kospi &minus;6.2%, Taiex &minus;4.8%; SoftBank slid ~15%, Nvidia whipsawed.</p>
-        <p class="brief"><b>India tariffs.</b> India is among 14 economies facing Section 301 duties up to 25% &mdash; 17% with a trade deal; New Delhi rejects the finding.</p>
-        <p class="brief"><b>Trump tariffs widen.</b> The president proposed further tariffs, including on China and the European Union, dominating US front pages.</p>
-        <p class="brief"><b>S&amp;P warns on Nvidia.</b> S&amp;P Global said Nvidia&rsquo;s AA credit rating could be cut within 90 days over governance risk after Jensen Huang&rsquo;s ouster and reinstatement as chief executive (CNBC).</p>
-        <p class="brief"><b>ElevenLabs funding.</b> Voice-AI startup ElevenLabs is reportedly in early talks to raise funds at a $33 billion valuation (Bloomberg).</p>
-      </div>
-    </div>
+<div class="grid tbl">
+  <div class="col">
+    <h2 class="sec"><svg width="22" height="22" viewBox="0 0 26 26"><polygon points="13,1 16,9 25,9 18,15 20,24 13,19 6,24 8,15 1,9 10,9" fill="#b3231b"/></svg>EUROPE</h2>
+    <div class="brief"><b>Grid under fire.</b> Russian strikes battered Ukraine&rsquo;s power and gas network overnight, leaving five regions with outages, Kyiv said.</div>
+    <div class="brief"><b>Drone toll.</b> Ukraine says its air defences brought down 88 of 112 Russian drones launched in the latest overnight wave.</div>
+    <div class="brief"><b>Poland&rsquo;s call.</b> Warsaw urged NATO to shoot down Russian missiles over Ukraine before they can cross into Polish airspace.</div>
+    <div class="brief"><b>Rutte&rsquo;s warning.</b> NATO&rsquo;s secretary general urged Europe to prepare for the possibility of extensive armed conflict.</div>
+    <div class="brief"><b>Estonia seals border.</b> Tallinn closed part of its frontier with Russia, citing risks along its eastern border.</div>
+    <div class="brief"><b>Nuclear-test inquiry.</b> Britain will open an independent inquiry into how nuclear testing affected veterans and their families.</div>
+    <div class="brief"><b>Puigdemont to return.</b> Carles Puigdemont will come back to Spain on 12 December, ending exile after courts shelved his case (Reuters).</div>
+    <div class="brief"><b>Paris backlash.</b> France&rsquo;s government faces significant pushback over plans to deploy troops for Ukraine, reports say.</div>
+    <div class="brief"><b>UK&ndash;EU treaties.</b> London and Brussels tied up post-Brexit deals on food trade and emissions trading, with laws to enact most of it.</div>
+    <div class="brief"><b>Poundland collapse.</b> Poundland entered administration, putting 12,000 jobs at risk, after owner Gordon Brothers rejected two final bids (BBC).</div>
+    <div class="brief"><b>EU tech fund.</b> EU officials plan a &euro;50 billion technology fund to rival the US and China in the quantum race, reports say.</div>
   </div>
-
-  <div class="band">
-    <h3><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.4" fill="#a41218"/><ellipse cx="12" cy="12" rx="10.5" ry="4.4" fill="none" stroke="#141310" stroke-width="1.8" transform="rotate(-24 12 12)"/></svg>Science, Space &amp; Sport</h3>
-    <div class="bcol">
-      <p class="brief"><b>COP31 collapse.</b> The UN climate summit in T&uuml;rkiye ended without an agreement &mdash; the first failed COP since Copenhagen in 2009; delegates called it the worst ever.</p>
-      <p class="brief"><b>El Ni&ntilde;o warning.</b> An extreme El Ni&ntilde;o is fuelling fears for the Amazon after weeks of severe weather, reports say.</p>
-      <p class="brief"><b>UK seasons shift.</b> Britain&rsquo;s seasons are shifting: winter frost days ran about a quarter lower in the decade to 2025 than in 1961&ndash;1990, while days reaching 25&deg;C more than doubled, the Met Office said (BBC).</p>
-    </div>
-    <div class="bcol">
-      <p class="brief"><b>Nuclear satellite fears.</b> NATO services concluded Russia may launch a nuclear-armed satellite, &lsquo;Sputnik-S&rsquo;, this year; Rutte vowed defence in space (Reuters).</p>
-      <p class="brief"><b>Euclid quasar.</b> ESA&rsquo;s Euclid telescope found the most distant quasar yet seen &mdash; as it was 630 million years after the Big Bang, its black hole weighing 360 million solar masses.</p>
-      <p class="brief"><b>Europa Clipper flyby.</b> NASA&rsquo;s Europa Clipper will swing within about 3,140&ndash;3,450 km of Earth on 3 December, using the flyby to gain speed toward Jupiter.</p>
-    </div>
-    <div class="bcol">
-      <p class="brief"><b>Baby aboard the ISS.</b> Canadian astronaut Joshua Kutryk welcomed his third child, a daughter, while aboard the International Space Station (BBC).</p>
-      <p class="brief"><b>Davis Cup.</b> Holders Italy edged South Korea 2&ndash;1 in Bologna, Berrettini and Vavassori winning the deciding doubles in two tiebreaks (Reuters).</p>
-      <p class="brief"><b>Spain sweat on Alcaraz.</b> Spain face Austria in the Davis Cup Final 8, with Carlos Alcaraz still building fitness after injury.</p>
-    </div>
-    <div class="bcol last">
-      <p class="brief"><b>Chess title match.</b> World champion Gukesh and challenger Sindarov drew their title-match opener in 38 moves near Geneva.</p>
-      <p class="brief"><b>Champions League.</b> Real Madrid came from 1&ndash;0 down to rout PSV 5&ndash;1 at the Bernab&eacute;u, substitute Jude Bellingham sparking the comeback.</p>
-      <p class="brief"><b>More Champions League.</b> Liverpool beat Club Brugge 3&ndash;0 and Bayern Munich lost for the first time this season, while Manchester United drew with Sporting in a chaotic match.</p>
-    </div>
+  <div class="col">
+    <h2 class="sec"><svg width="22" height="22" viewBox="0 0 26 26"><path d="M17,2 A10.5,10.5 0 1,0 17,24 A8.4,8.4 0 1,1 17,2 Z" fill="#b3231b"/></svg>MIDDLE EAST</h2>
+    <div class="brief"><b>Netanyahu case.</b> Judges in the prime minister&rsquo;s corruption trial recommended prosecutors drop the key Case 4000 bribery charge.</div>
+    <div class="brief"><b>October 7 inquiry.</b> A Knesset committee approved a state commission to investigate the 7 October attacks, despite Netanyahu&rsquo;s resistance.</div>
+    <div class="brief"><b>Riyadh tower hit again.</b> A Houthi missile struck Riyadh&rsquo;s PIF Tower for a second time in a week, wounding 11, Saudi civil defence said.</div>
+    <div class="brief"><b>Yemen exchange.</b> The Saudi-led coalition struck Hodeidah port and targets near Sanaa, and said it intercepted missiles over Riyadh and two drones.</div>
+    <div class="brief"><b>Oil climbs.</b> Crude rose after the Houthis claimed an attack on Saudi Arabia&rsquo;s largest refinery; Riyadh said it downed four drones over Ras Tanura.</div>
+    <div class="brief"><b>Gaza strike.</b> An Israeli strike in Gaza City&rsquo;s Shati camp killed Hamas security official Mohammad Majed Abu al-Ouf, his wife and his daughters, 15 and 13.</div>
+    <div class="brief"><b>Flood warning.</b> Gaza municipalities warn winter rains could flood about 1,000 camps and shelter sites for displaced people.</div>
+    <div class="brief"><b>Hasakah attack.</b> An ISIL suicide bombing at a checkpoint in Hasakah, north-east Syria, killed two security personnel and wounded five.</div>
+    <div class="brief"><b>Iran war funds.</b> President Trump said Washington has funding to sustain its war against Iran until the end of January.</div>
+    <div class="brief"><b>Hormuz mines.</b> Iran reported two &lsquo;rogue&rsquo; oil tankers hit naval mines and caught fire in the Strait of Hormuz.</div>
+    <div class="brief"><b>Executions reported.</b> Iranian authorities plan to execute two anti-regime protesters at dawn after three days on death row, reports say.</div>
   </div>
-
-  <div class="footer">
-    <span class="l">59 stories &middot; 7 regions</span><span class="r">Drawn in code &middot; No photographs</span>
-    <div class="c">Sources: Reuters &middot; AP &middot; BBC &middot; Al Jazeera &middot; Bloomberg &middot; CNBC &middot; The Guardian &middot; Dawn &middot; Phys.org</div>
+  <div class="col">
+    <h2 class="sec"><svg width="22" height="22" viewBox="0 0 26 26"><circle cx="13" cy="13" r="5.5" fill="#b3231b"/><g stroke="#b3231b" stroke-width="2.4"><line x1="13" y1="1" x2="13" y2="5"/><line x1="13" y1="21" x2="13" y2="25"/><line x1="1" y1="13" x2="5" y2="13"/><line x1="21" y1="13" x2="25" y2="13"/><line x1="4.5" y1="4.5" x2="7.3" y2="7.3"/><line x1="18.7" y1="18.7" x2="21.5" y2="21.5"/><line x1="21.5" y1="4.5" x2="18.7" y2="7.3"/><line x1="7.3" y1="18.7" x2="4.5" y2="21.5"/></g></svg>ASIA-PACIFIC</h2>
+    <div class="brief"><b>First aboard Tiangong.</b> Pakistan&rsquo;s Muhammad Zeeshan Ali became the first foreign astronaut to board China&rsquo;s Tiangong station, and the first Pakistani in orbit.</div>
+    <div class="brief"><b>Swiss office row.</b> North Korea threatened to close Switzerland&rsquo;s newly reopened office in Pyongyang in a sanctions row over a youth camp.</div>
+    <div class="brief"><b>Malaysia sues Google.</b> Kuala Lumpur is suing Google for $146 million over gambling, scam and dangerous content on YouTube.</div>
+    <div class="brief"><b>Pacific pact.</b> Australia and Solomon Islands signed a security treaty affirming no foreign military base in the Pacific nation &mdash; a blow to China.</div>
+    <div class="brief"><b>Indonesia mine flood.</b> Rescuers in West Java resumed the search for 13 miners trapped in a flooded illegal gold mine near Bogor; 13 are already confirmed dead (Reuters).</div>
+    <h2 class="sec" style="margin-top:9px;"><svg width="22" height="22" viewBox="0 0 26 26"><polygon points="13,1 25,13 13,25 1,13" fill="#b3231b"/></svg>AFRICA</h2>
+    <div class="brief"><b>Egypt inferno.</b> At least 30 died and 15 were wounded when a petroleum tanker overturned and burst into flames on Cairo&rsquo;s Ring Road.</div>
+    <div class="brief"><b>Nigeria meth bust.</b> Agents seized 1,512 kg of meth worth $227m from an industrial-scale lab in Enugu, arresting five Mexican nationals (AP).</div>
+    <div class="brief"><b>Zambia protest ban.</b> Authorities banned a protest against moves to scrap presidential term limits, citing a risk of clashes.</div>
+    <div class="brief"><b>Senegal champions again.</b> The Court of Arbitration for Sport restored Senegal as Africa Cup of Nations champions, upholding the 1&ndash;0 final win over Morocco.</div>
+    <div class="brief"><b>Sudan drone strikes.</b> Drone strikes blamed on the paramilitary RSF killed 19 civilians and wounded 20 in Blue Nile state, a Sudanese rights group said (Reuters).</div>
   </div>
+  <div class="col last">
+    <h2 class="sec"><svg width="22" height="22" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#b3231b" stroke-width="2.4"/><ellipse cx="13" cy="13" rx="5.5" ry="11" fill="none" stroke="#b3231b" stroke-width="2"/><line x1="2" y1="13" x2="24" y2="13" stroke="#b3231b" stroke-width="2"/></svg>AMERICAS</h2>
+    <div class="brief"><b>Parade postponed.</b> The 100th Macy&rsquo;s Thanksgiving Parade was postponed to Saturday &mdash; a first &mdash; as a nor&rsquo;easter hit New York (Reuters).</div>
+    <div class="brief"><b>Cartagena hostages freed.</b> Colombian police stormed a supermarket and freed about 20 hostages held 17 hours after a failed cash-truck robbery.</div>
+    <div class="brief"><b>Mississippi crash.</b> Six people, including two children, died when a small aircraft crashed near the Mississippi coast.</div>
+    <div class="brief"><b>Power contract voided.</b> Puerto Rico&rsquo;s Supreme Court ruled 5&ndash;4 to cancel the Luma Energy power contract, giving officials a year to decide next steps.</div>
+    <div class="brief"><b>Deportation saga ends.</b> Kilmar &Aacute;brego Garc&iacute;a, whose deportation to El Salvador sparked a bitter immigration fight, is leaving the US for Spain.</div>
+    <div class="brief"><b>Iowa detonation.</b> The US Army detonated nearly 10,000 lb of deteriorating lead azide at its Iowa ammunition plant, after court clearance.</div>
+    <div class="brief"><b>Children returned.</b> Washington and Moscow announced nine Ukrainian children returned to their families, in a Melania Trump-backed process.</div>
+    <div class="brief"><b>California king tides.</b> Forecasters warned of major coastal flooding as king tides peaked over Thanksgiving, with flooding already reported in the San Francisco Bay Area (BBC).</div>
+    <h2 class="sec" style="margin-top:9px;"><svg width="22" height="22" viewBox="0 0 26 26"><polyline points="2,21 9,12 14,16 24,4" fill="none" stroke="#b3231b" stroke-width="2.6"/><polygon points="24,4 17,4.6 22.4,10" fill="#b3231b"/></svg>MARKETS &amp; TECH</h2>
+    <div class="brief"><b>Asia tech rout.</b> The AI trade unwound: Nikkei 225 &minus;2.78% to 57,011.62, Kospi &minus;6.2%, Taiex &minus;4.8%; SoftBank slid ~15%, Nvidia whipsawed.</div>
+    <div class="brief"><b>India tariffs.</b> India is among 14 economies facing US Section 301 duties up to 25% &mdash; 17% with a trade deal; New Delhi rejects the finding.</div>
+    <div class="brief"><b>Trump tariffs widen.</b> The president proposed further tariffs, including on China and the European Union, dominating US front pages.</div>
+    <div class="brief"><b>S&amp;P warns on Nvidia.</b> S&amp;P Global said Nvidia&rsquo;s AA credit rating could be cut within 90 days over governance risk around Jensen Huang&rsquo;s ouster and reinstatement (CNBC).</div>
+    <div class="brief"><b>ElevenLabs funding.</b> Voice-AI startup ElevenLabs is reportedly in early talks to raise funds at a $33 billion valuation (Bloomberg).</div>
+    <div class="brief"><b>Nvidia shipments halt.</b> Nvidia told partners to stop shipping servers to four Southeast Asian countries, the FT reported (via Reuters).</div>
+  </div>
+</div>
+
+<div class="band">
+  <h2 class="sec"><svg width="22" height="22" viewBox="0 0 26 26"><circle cx="13" cy="13" r="4" fill="#b3231b"/><ellipse cx="13" cy="13" rx="12" ry="5" fill="none" stroke="#b3231b" stroke-width="2" transform="rotate(-24 13 13)"/></svg>SCIENCE, SPACE &amp; SPORT</h2>
+  <div class="bandcols tbl">
+  <div class="bcol">
+    <div class="brief"><b>COP31 collapse.</b> The UN climate summit in T&uuml;rkiye ended without an agreement &mdash; the first failed COP since Copenhagen in 2009; delegates called it the worst ever.</div>
+    <div class="brief"><b>Nuclear satellite fears.</b> NATO services concluded Russia may launch a nuclear-armed satellite, &lsquo;Sputnik-S&rsquo;, this year; Rutte vowed defence in space (Reuters).</div>
+    <div class="brief"><b>Euclid quasar.</b> ESA&rsquo;s Euclid telescope found the most distant quasar yet &mdash; dating to 630 million years after the Big Bang, with a black hole of 360 million solar masses.</div>
+  </div>
+  <div class="bcol">
+    <div class="brief"><b>Europa Clipper flyby.</b> NASA&rsquo;s Europa Clipper will swing within 3,140&ndash;3,450 km of Earth on 3 December, gaining speed toward Jupiter.</div>
+    <div class="brief"><b>Baby aboard the ISS.</b> Canadian astronaut Joshua Kutryk welcomed his third child, a daughter, while aboard the International Space Station (BBC).</div>
+    <div class="brief"><b>UK seasons shift.</b> Britain&rsquo;s seasons are shifting: winter frost days ran about a quarter lower in the decade to 2025 than in 1961&ndash;1990, while days reaching 25&deg;C more than doubled (BBC).</div>
+  </div>
+  <div class="bcol">
+    <div class="brief"><b>El Ni&ntilde;o warning.</b> An extreme El Ni&ntilde;o is fuelling fears for the Amazon after weeks of severe weather, reports say.</div>
+    <div class="brief"><b>Davis Cup.</b> Holders Italy edged South Korea 2&ndash;1 in Bologna, Berrettini and Vavassori winning the deciding doubles in two tiebreaks (Reuters).</div>
+    <div class="brief"><b>Chess title match.</b> World champion Gukesh and challenger Sindarov drew their title-match opener in 38 moves near Geneva.</div>
+  </div>
+  <div class="bcol last">
+    <div class="brief"><b>Champions League.</b> Real Madrid came from 1&ndash;0 down to rout PSV 5&ndash;1 at the Bernab&eacute;u, substitute Jude Bellingham sparking the comeback.</div>
+    <div class="brief"><b>More Champions League.</b> Liverpool beat Club Brugge 3&ndash;0 and Bayern Munich lost for the first time this season, while Manchester United drew with Sporting in a chaotic match.</div>
+  </div>
+  </div>
+</div>
+
+<div class="footer tbl">
+  <div class="l">58 stories &middot; 7 regions</div>
+  <div class="c">Sources: Reuters &middot; AP &middot; BBC &middot; Bloomberg &middot; CNBC &middot; Dawn</div>
+  <div class="r">Drawn in code &middot; No photographs</div>
+</div>
 
 </body>
 </html>
