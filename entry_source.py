@@ -1,26 +1,29 @@
-"""Entry program: copies the bundled entry.png to the output path."""
-from pathlib import Path
 import os
 import shutil
+from pathlib import Path
 
-ASSET = Path(__file__).resolve().parent / "entry.png"
-
-
-def target() -> Path:
-    raw = os.environ.get("ENTRY_OUTPUT")
-    return Path(raw) if raw else Path("/output/entry.png")
+HERE = Path(__file__).parent
+BUNDLED = HERE / "entry.png"
 
 
-def main() -> None:
-    dest = target()
+def destination():
+    env = os.getenv("ENTRY_OUTPUT")
+    if env:
+        return Path(env)
+    return Path("/output") / "entry.png"
+
+
+def run():
+    out = destination()
     try:
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(ASSET, dest)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        with open(BUNDLED, "rb") as src, open(out, "wb") as dst:
+            shutil.copyfileobj(src, dst)
     except OSError:
-        fallback = Path.cwd() / "output" / "entry.png"
-        fallback.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(ASSET, fallback)
+        alt = Path("output") / "entry.png"
+        alt.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(BUNDLED, alt)
 
 
 if __name__ == "__main__":
-    main()
+    run()
